@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ze-0b-mGC">
+                                <rect key="frame" x="20" y="111" width="248" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show picker with 'Date of birth type'"/>
+                                <connections>
+                                    <action selector="birthdayButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VNg-TZ-5ju"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ize-Qg-aW2">
+                                <rect key="frame" x="20" y="161" width="200" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show picker with 'Items type'"/>
+                                <connections>
+                                    <action selector="itemsButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXZ-iv-O4V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96I-vl-OUe">
+                                <rect key="frame" x="20" y="211" width="262" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show picker with 'Date and Time type'"/>
+                                <connections>
+                                    <action selector="dateAndTimeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dy2-Ms-wbO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose type of picker:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6p-0J-B59">
+                                <rect key="frame" x="20" y="70" width="173" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ze-0b-mGC" firstAttribute="leading" secondItem="Ize-Qg-aW2" secondAttribute="leading" id="1AE-fC-gTn"/>
+                            <constraint firstItem="Ize-Qg-aW2" firstAttribute="leading" secondItem="96I-vl-OUe" secondAttribute="leading" id="3Wo-zC-LL8"/>
+                            <constraint firstItem="3ze-0b-mGC" firstAttribute="top" secondItem="Y6p-0J-B59" secondAttribute="bottom" constant="20" id="7iK-Ay-AeD"/>
+                            <constraint firstItem="Y6p-0J-B59" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="9ns-Ti-N0S"/>
+                            <constraint firstItem="Ize-Qg-aW2" firstAttribute="top" secondItem="3ze-0b-mGC" secondAttribute="bottom" constant="20" id="CTK-pD-jZW"/>
+                            <constraint firstItem="96I-vl-OUe" firstAttribute="top" secondItem="Ize-Qg-aW2" secondAttribute="bottom" constant="20" id="ZOc-8h-6te"/>
+                            <constraint firstItem="Y6p-0J-B59" firstAttribute="leading" secondItem="3ze-0b-mGC" secondAttribute="leading" id="gXS-0d-tjC"/>
+                            <constraint firstItem="Y6p-0J-B59" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="h8j-Tb-naj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
