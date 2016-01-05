@@ -11,7 +11,12 @@ BIZPickerViewController is a useful picker with simple customization and handy f
 # Installation
 
 ### Manually
-- Copy BIZPickerViewController folder to your project 
+- Copy ```Classes``` folder to your project 
+
+### From CocoaPods:
+```objective-c
+pod 'BIZPickerViewController' 
+```
 
 
 # Usage
